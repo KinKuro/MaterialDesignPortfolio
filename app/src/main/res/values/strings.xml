@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">NewsReader</string>
+
+    <!--news URL-->
+    <string name="url_ddanzi"><![CDATA[http://www.ddanzi.com/index.php?mid=ddanziNews&act=rss]]></string>
+    <string name="url_donga">http://rss.donga.com/total.xml</string>
+    <string name="url_hankuk">http://rss.hankooki.com/daily/dh_main.xml</string>
+    <string name="url_hankyoreh">http://www.hani.co.kr/rss/</string>
+    <string name="url_inews">http://www.inews24.com/rss/news_inews.xml</string>
+    <string name="url_kukmin">http://rss.kmib.co.kr/data/kmibRssAll.xml</string>
+    <string name="url_mbc">http://imnews.imbc.com/rss/news/news_00.xml</string>
+    <string name="url_sbs">http://api.sbs.co.kr/xml/news/rss.jsp?pmDiv=external</string>
+    <string name="url_cnn">http://rss.cnn.com/rss/edition.rss</string>
+    <string name="url_nocut">http://rss.nocutnews.co.kr/NocutPolitics.xml</string>
+
+    <!--news Name-->
+    <string name="name_ddanzi">딴지일보</string>
+    <string name="name_donga">동아일보</string>
+    <string name="name_hankuk">한국일보</string>
+    <string name="name_hankyoreh">한겨레</string>
+    <string name="name_inews">아이뉴스 24</string>
+    <string name="name_kukmin">국민일보</string>
+    <string name="name_mbc">MBC</string>
+    <string name="name_sbs">SBS</string>
+    <string name="name_cnn">CNN</string>
+    <string name="name_nocut">노컷뉴스</string>
+
+    <!--encording Type-->
+    <string name="encording_utf8">utf-8</string>
+    <string name="encording_euc_kr">euc-kr</string>
+
+    <!--admob-->
+    <string name="ad_appid">ca-app-pub-2189880212498024~6884593236</string>
+    <string name="ad_banner">ca-app-pub-2189880212498024/3189778855</string>
+    <string name="ad_banner_news">ca-app-pub-2189880212498024/5883990849</string>
+    <string name="ad_interstitial">ca-app-pub-2189880212498024/6476739984</string>
+
+
+</resources>

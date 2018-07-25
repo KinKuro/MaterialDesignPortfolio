@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="studies.kinkuro.materialdesignportfolio.MainActivity">
+
+    <!--실제 화면-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Toolbar 부분-->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/AppTheme.AppBar">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+                <ImageView
+                    android:id="@+id/btn_menu_nav"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_menu"
+                    android:clickable="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="뉴스 모아보기"
+                    android:textSize="24sp"
+                    android:textColor="#fff"/>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- Content부분-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbar"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_above="@id/adview">
+            <!--왼쪽 버튼들-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:id="@+id/news_kukmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_kukmin"
+                    android:background="@drawable/frame_button"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:elevation="4dp"/>
+
+                <ImageView
+                    android:id="@+id/news_donga"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_donga"
+                    android:background="@drawable/frame_button"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:elevation="4dp"/>
+
+                <ImageView
+                    android:id="@+id/news_sbs"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_sbs"
+                    android:background="@drawable/frame_button"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:elevation="4dp"/>
+
+                <ImageView
+                    android:id="@+id/news_hankyoreh"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_hankyoreh"
+                    android:background="@drawable/frame_button"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:elevation="4dp"/>
+
+            </LinearLayout>
+
+            <!--오른쪽 버튼들-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                >
+
+                <ImageView
+                    android:id="@+id/news_nocut"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_nocut"
+                    android:background="@drawable/frame_button"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:elevation="4dp"/>
+
+
+                <ImageView
+                    android:id="@+id/news_inews"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_inews24"
+                    android:background="@drawable/frame_button"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:elevation="4dp"/>
+
+
+                <ImageView
+                    android:id="@+id/news_hankuk"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_hankuk"
+                    android:background="@drawable/frame_button"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:elevation="4dp"/>
+
+                <ImageView
+                    android:id="@+id/news_cnn"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_cnn"
+                    android:background="@drawable/frame_button"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:elevation="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ad_banner">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+    <!-- NavigationDrawer-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_main_navi"
+        app:menu="@menu/menu_main_navi">
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
